@@ -1,9 +1,10 @@
 import React, { Fragment, } from 'react';
 import { Route, Switch, } from 'react-router-dom';
-import Home from './Samples/Home';
-import About from './Samples/About';
-import NoMatch from './Samples/NoMatch';
-import NavBar from './Samples/NavBar';
+import Home from './Comp/Home';
+import User from './Comp/User';
+import NoMatch from './Comp/NoMatch';
+import NavBar from './Comp/NavBar';
+import UserProfile from './Comp/UserProfile';
 
 
 import './App.css';
@@ -16,7 +17,7 @@ const App = () => (
     <Container>
       <Switch>
         <Route exact path="/home" component={Home} />
-        <Route path="/about" component={About} />
+        <Route path="/userprofile" component={UserProfile}/>
         <Route component={NoMatch} />
       </Switch>
     </Container>
